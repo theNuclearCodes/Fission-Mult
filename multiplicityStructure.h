@@ -24,15 +24,6 @@ class CollLine
 {
 public:
   int history;
-  int generation;
-  int multiplicityNeutrons;
-  int multiplicityPhotons;
-};
-
-class HistoryClass
-{
-public:
-  int history;
   int number;
   int yype;
   int interaction;
@@ -43,8 +34,15 @@ public:
   double position[3];
   double weight;
   int generation;
-  int  scattersCode;
+  int  scatters;
+  int Code;
   double prior;
+};
+
+class HistoryClass
+{
+public:
+ 
 };
 
 class ParticleClass
