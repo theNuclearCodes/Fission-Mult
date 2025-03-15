@@ -5,6 +5,12 @@
 #include <sstream>
 #include <stdint.h>
 
+class FissList
+{
+public:
+  FissLine* allFissions;
+}
+
 class FissLine
 {
 public:
@@ -18,15 +24,6 @@ class CollLine
 {
 public:
   int history;
-  int generation;
-  int multiplicityNeutrons;
-  int multiplicityPhotons;
-};
-
-class HistoryClass
-{
-public:
-  int history;
   int number;
   int yype;
   int interaction;
@@ -37,8 +34,40 @@ public:
   double position[3];
   double weight;
   int generation;
-  int  scattersCode;
+  int  scatters;
+  int Code;
   double prior;
+};
+
+class HistoryClass
+{
+public:
+ 
+};
+
+class ParticleClass
+{
+public:
+  NeutronClass neutron
+  PhotonClass photon
+};
+
+class NeutronClass
+{
+public:
+  double energyDeposited;
+  double lightOutput;
+  double energyToF;
+  int numberOfInteractions;
+};
+
+class PhotonClass
+{
+public:
+  double energyDeposited;
+  double lightOutput;
+  double energyToF;
+  int numberOfInteractions
 };
 
 
